@@ -1,0 +1,7 @@
+<h1><%= @course.course_name %> Roster</h1>
+
+<% @course.students.each do |student| %>
+  <li><%= student.first_name %></li>
+<% end %>
+
+<%= link_to "Course Index", courses_path %>

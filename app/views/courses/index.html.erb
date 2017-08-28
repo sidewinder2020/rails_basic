@@ -1,0 +1,7 @@
+<h1> Courses for all the little Spoiled Brats </h1>
+
+<% @courses.each do |course| %>
+  <li><%= link_to course.course_name, course_path(course.id) %></li>
+<% end %>
+
+<%= link_to "Spoiled Brat Index", students_path %>
